@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <div class="log">
+        <img src="log.png">
+            <h1>login</h1>
+        <form name="myform" action="Home.html" method="POST" onsubmit="return validDate()">
+            <p>UserName</p>
+            <input type="text" name="nm" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="pwd" placeholder="Enter Password">
+            <input type="submit" name="sub" value="Login">
+            <a href="#">Forgot Password?</a><br>
+            <a href="#">Dont have Account?</a>
+        </form>
+    </div>
+    <script>
+        function validDate(){
+    var v1 = document.forms["myform"]["nm"].value;
+    var v2 = document.forms["myform"]["pwd"].value;
+    if( v1 == ""){
+        alert("username cannot be empty");
+        return false;
+    }
+    if( v2 == ""){
+        alert("password cannot be empty");
+        return false;
+         }
+    }
+    </script>
+</body>
+</html>
